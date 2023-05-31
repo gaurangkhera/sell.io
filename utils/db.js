@@ -11,7 +11,7 @@ export const connectToDb = async () => {
     }
     try{
         await mongoose.connect(process.env.MONGODB_URI, {
-            dbName: 'Prompty-db',
+            dbName: 'prod',
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
